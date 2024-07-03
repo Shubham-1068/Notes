@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+canvas{
+    border: 2px solid rgb(148, 148, 148);
+    margin-bottom: 50px;
+    scroll-behavior: smooth;
+}
+
+#menuList{
+    animation: pop 0.6s ease-in-out 0s 1 both alternate;
+}
+
+@keyframes pop {
+    0%{
+        height: 0px;
+        width: 0px;
+    }
+    100%{
+        height: 600px;
+        width: 600px;
+    }
+}
+
+/* body{
+    background-color: black;
+    color: aliceblue;
+} */
