@@ -29,11 +29,11 @@ useEffect(() => {
 
             <p className="absolute top-[18px] md:left-[63px] left-5 font-bold text-3xl border-b-4 border-[#7dd821]">Filters</p>
 
-          <div className="mt-12 w-[90%] flex justify-around items-center flex-col md:flex-row md:gap-0 gap-9">
+          <div className="mt-14 md:mt-12 w-[90%] flex justify-around items-center flex-col md:flex-row md:gap-0 gap-9">
 
           <div className="flex gap-3">
-            <p>Selct Your Semester : </p>
-            <select id="sem" className="border-b-2 border-[#7dd821] outline-none text-center" onChange={()=>{sem(document.getElementById('sem').value)}}>
+            <p className="text-[17px] md:text-xl">Selct Your Semester : </p>
+            <select id="sem" className="border-b-2 border-[#7dd821] outline-none text-center text-[17px] md:text-xl" onChange={()=>{sem(document.getElementById('sem').value)}}>
               <option value="">Select an option</option>
               <option value="12">Semester-1&2</option>
               <option value="3">Semester-3</option>
@@ -46,8 +46,8 @@ useEffect(() => {
           </div>
 
           <div className="flex gap-3">
-            <p>Select Your Department : </p>
-            <select id="dept" className="border-b-2 border-[#7dd821] outline-none text-center" onChange={()=>{dept(document.getElementById('dept').value)}}>
+            <p className="text-[17px] md:text-xl">Select Your Department : </p>
+            <select id="dept" className="border-b-2 border-[#7dd821] outline-none text-center text-[17px] md:text-xl" onChange={()=>{dept(document.getElementById('dept').value)}}>
               <option value="">Select an option</option>
               <option value="SASH">SASH</option>
               <option value="CS">CSE-CS</option>

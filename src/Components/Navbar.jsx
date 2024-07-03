@@ -28,20 +28,20 @@ function Navbar() {
         }
     }
 
-    function darkMode() {
-        if(dm == false){
-            document.querySelector('body').style.backgroundColor = 'black';
-            document.querySelector('body').style.color = 'white';
-            document.getElementById('menu').src = menuOpen;
-            dmChange(true);
-        }
-        if(dm == true){
-            document.querySelector('body').style.backgroundColor = 'white';
-            document.querySelector('body').style.color = 'black';
-            document.getElementById('menu').src = menuOpen;
-            dmChange(false);
-        }
-    }
+    // function darkMode() {
+    //     if(dm == false){
+    //         document.querySelector('body').style.backgroundColor = 'black';
+    //         document.querySelector('body').style.color = 'white';
+    //         document.getElementById('menu').src = menuOpen;
+    //         dmChange(true);
+    //     }
+    //     if(dm == true){
+    //         document.querySelector('body').style.backgroundColor = 'white';
+    //         document.querySelector('body').style.color = 'black';
+    //         document.getElementById('menu').src = menuOpen;
+    //         dmChange(false);
+    //     }
+    // }
     
     
     return (
@@ -59,7 +59,7 @@ function Navbar() {
             </div>
             <div className="hidden mr-8 md:flex items-center gap-6 font-semibold relative z-10 ">
                 <div className='flex justify-center items-center border-2 rounded-lg border-[#7dd821] h-9 w-20 hover:bg-[#7dd821] cursor-pointer'>Contact</div>
-                <div className="" onClick={()=>{darkMode()}}>
+                <div className="">
                     <img src={dicon} alt="darkmode" className='h-9 cursor-pointer'/>
                 </div>
             </div>
