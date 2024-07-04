@@ -9,6 +9,8 @@ import Topics from "./Components/Topics";
 import Footer from "./Components/Footer";
 import Notes from "./Components/Notes";
 import Pdf from "./Components/Pdf.jsx";
+import Contact from "./Components/Contact.jsx";
+import FAQ from "./Components/FAQ.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -42,6 +44,28 @@ function App() {
         <>
           <Navbar />
           <Pdf />
+          <Footer />
+        </>
+      ),
+    },
+
+    {
+      path: "/contact",
+      element: (
+        <>
+          <Navbar />
+          <Contact />
+          <Footer />
+        </>
+      ),
+    },
+
+    {
+      path: "/FAQ",
+      element: (
+        <>
+          <Navbar />
+          <FAQ />
           <Footer />
         </>
       ),
